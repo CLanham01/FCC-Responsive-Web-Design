@@ -1,0 +1,43 @@
+#main{
+    text-align: center;
+    background: rgba(130, 161, 255, 0.2);
+    margin: auto;
+}
+#title{
+font-size: 80px;
+}
+#img-div{
+    background-color: rgba(130, 161, 255, 1);
+width: auto;
+height: auto;
+position: center;
+}
+img{
+  display: block;
+max-width:100%;
+margin: auto;
+  padding-top: 5px;
+}
+#img-caption{
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+ul{
+    max-width: 700px;
+    margin:0 auto 50px auto;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.8em;
+}
+#tribute-link:hover{
+font-size: 2.1em;
+}
+a:visited{
+color:red;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 2em;
+}

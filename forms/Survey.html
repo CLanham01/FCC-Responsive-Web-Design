@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Survey </title>
+    <link rel="stylesheet" href="Survey.css">
+</head>
+
+<body>
+    <main>
+        <H1 id="title"> Community Member Survey </H1>
+        <H3> Please help us imporve our online community. </H3>
+        <p id="description"> This survey is to help us improve in areas you, as the community member, would like to see
+            improved.
+            To improve your experience.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="13" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>How long have you been a part of our Community?</p>
+                <select id="dropdown" name="membershipLength" class="form-control" required>
+                    <option disabled selected value>Select Membership Length</option>
+                    <option value="lessThan1">Less than 1 year</option>
+                    <option value="1to3">1 to 3 years</option>
+                    <option value="3to5">3 to 5 years</option>
+                    <option value="greaterThan5">Greater than 5 years</option>
+                </select>
+            </div>
+            <div class="form-group" id="radio-checkbox">
+                <p>Whould you recommend our community to your friends?</p>
+                <label>
+                    <input name="recommend" value="Yes" type="radio" class="input-radio" checked />Yes
+                </label>
+                <label>
+                    <input name="recommend" value="No" type="radio" class="input-radio" />Maybe
+                </label>
+                <label>
+                    <input name="recommend" value="Undecided" type="radio" class="input-radio" />Undecided
+                </label>
+            </div>
+            <div class="form-group" id="radio-checkbox">
+                <p>Which areas do you enjoy using the most? <span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input name="usage" value="forums" type="checkbox" class="input-checkbox" />Forums
+                </label>
+                <label>
+                    <input name="usage" value="chatRooms" type="checkbox" class="input-checkbox" />Chat Rooms
+                </label>
+                <label>
+                    <input name="usage" value="videoChat" type="checkbox" class="input-checkbox" />Video Chat
+                </label>
+                <label>
+                    <input name="usage" value="devotions" type="checkbox" class="input-checkbox" />Devotions
+                </label>
+                <label>
+                    <input name="usage" value="videoMessages" type="checkbox" class="input-checkox" />Video Messages
+                </label>
+                <label>
+                    <input name="usage" value="studyLessons" type="checkbox" class="input-checkbox" />Study Lessons
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Are there any suggestions you would like to make? <span>(eample: feature to add or improve
+                        upon.</span></p>
+                <textarea id="suggestions" class="input-textarea" name="suggestions"
+                    placeholder="Please enter your suggestions here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
